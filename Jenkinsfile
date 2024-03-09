@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/shubhamnsut/JenkinsReact'
+                git 'https://github.com/shubhamnsut/JenkinsReact.git'
             }
         }
 
@@ -14,10 +14,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-
-               }
-
-        
     }
 
     post {
